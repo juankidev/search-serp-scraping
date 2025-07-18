@@ -24,7 +24,7 @@ def buscar_productos(query):
                 "rating": producto.get("rating"),
                 "reviews": producto.get("reviews"),
                 "fuente": producto.get("source"),
-                "link": producto.get("link"),
+                "link": producto.get("product_link"),
                 "imagen": producto.get("thumbnail")
             })
 
@@ -34,7 +34,7 @@ def buscar_productos(query):
             productos.append({
                 "titulo": item.get("title"),
                 "descripcion": item.get("snippet"),
-                "link": item.get("link"),
+                "link": item.get("product_link"),
                 "fuente": item.get("displayed_link")
             })
 
