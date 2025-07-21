@@ -20,7 +20,7 @@ def buscar_productos(query):
         for producto in data["shopping_results"]:
             productos.append({
                 "titulo": producto.get("title"),
-                "precio": producto.get("price"),
+                "precio": producto.get("extracted_price"),
                 "rating": producto.get("rating"),
                 "reviews": producto.get("reviews"),
                 "fuente": producto.get("source"),
