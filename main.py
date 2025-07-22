@@ -10,7 +10,7 @@ app = FastAPI()
 # Lista de orígenes permitidos (puede ser '*', pero no es recomendable en producción)
 origins = [
     "http://localhost:4200",  # frontend Angular local
-    "sweet-search.zeabur.app"
+    "https://sweet-search.zeabur.app"
 ]
 
 # Middleware CORS
